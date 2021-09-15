@@ -31,7 +31,8 @@ class TeamBase:
           {
             "name" : "<team_name>",
             "description" : "<some description>",
-            "creation_time" : "<some date:time format>"
+            "creation_time" : "<some date:time format>",
+            "admin": "<id of a user>"
           }
         ]
         """
@@ -89,6 +90,9 @@ class TeamBase:
         }
 
         :return:
+
+        Constraint:
+        * Cap the max users that can be added to 50
         """
         pass
 
@@ -102,6 +106,9 @@ class TeamBase:
         }
 
         :return:
+
+        Constraint:
+        * Cap the max users that can be added to 50
         """
         pass
 
