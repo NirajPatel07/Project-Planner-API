@@ -1,0 +1,45 @@
+summary: "List team users"
+description: "Retrieve a list of users belonging to a team"
+consumes:
+  - "application/json"
+produces:
+  - "application/json"
+
+tags:
+  - "Team"
+
+parameters:
+  - in: "body"
+    name: "body"
+    description: "JSON object containing the team ID"
+    required: true
+    schema:
+      type: "object"
+      properties:
+        id:
+          type: "string"
+          example: "123456"
+
+responses:
+  200:
+    description: "Team users listed successfully"
+    schema:
+      type: "array"
+      items:
+        type: "object"
+        properties:
+          id:
+            type: "string"
+            example: "user_id_1"
+          name:
+            type: "string"
+            example: "John"
+          display_name:
+            type: "string"
+            example: "John Doe"
+  400:
+    description: "Invalid request payload"
+  404:
+    description: "Team not found"
+  500:
+    description: "Internal server error"

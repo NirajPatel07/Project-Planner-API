@@ -1,0 +1,28 @@
+summary: "REST API"
+description: "Rest API Swagger"
+consumes:
+  - "application/json"
+produces:
+  - "application/json"
+
+tags:
+  - "User"
+responses:
+  200:
+    description: "Users listed successfully"
+    schema:
+      type: "array"
+      items:
+        type: "object"
+        properties:
+          name:
+            type: "string"
+            example: "John"
+          display_name:
+            type: "string"
+            example: "John Doe"
+          creation_time:
+            type: "string"
+            example: "2023-07-16 12:00:00"
+  500:
+    description: "Internal server error"

@@ -1,0 +1,36 @@
+summary: "List all teams"
+description: "Retrieve a list of all teams"
+consumes:
+  - "application/json"
+produces:
+  - "application/json"
+
+tags:
+  - "Team"
+
+paths:
+  /list_teams:
+    get:
+      tags:
+        - "Team"
+      summary: "List all teams"
+      description: "Retrieve a list of all teams"
+      responses:
+        200:
+          description: "Teams listed successfully"
+          schema:
+            type: "array"
+            items:
+              type: "object"
+              properties:
+                name:
+                  type: "string"
+                  example: "Team 1"
+                description:
+                  type: "string"
+                  example: "Some description"
+                creation_time:
+                  type: "string"
+                  example: "2023-07-16 12:00:00"
+        500:
+          description: "Internal server error"

@@ -1,0 +1,34 @@
+summary: "Update task status"
+description: "Update the status of a task"
+consumes:
+  - "application/json"
+produces:
+  - "application/json"
+
+tags:
+  - "Project Board"
+
+parameters:
+  - in: "body"
+    name: "body"
+    description: "JSON object containing the task ID and updated status"
+    required: true
+    schema:
+      type: "object"
+      properties:
+        id:
+          type: "string"
+          example: "123456"
+        status:
+          type: "string"
+          example: "OPEN"
+
+responses:
+  200:
+    description: "Task status updated successfully"
+  400:
+    description: "Invalid request payload"
+  404:
+    description: "Task not found"
+  500:
+    description: "Internal server error"

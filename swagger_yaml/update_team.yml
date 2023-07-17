@@ -1,0 +1,43 @@
+summary: "Update a team"
+description: "Update the details of a specific team"
+consumes:
+  - "application/json"
+produces:
+  - "application/json"
+
+tags:
+  - "Team"
+
+parameters:
+  - in: "body"
+    name: "body"
+    description: "JSON object containing the team ID and updated team details"
+    required: true
+    schema:
+      type: "object"
+      properties:
+        id:
+          type: "string"
+          example: "123456"
+        team:
+          type: "object"
+          properties:
+            name:
+              type: "string"
+              example: "Team 1"
+            description:
+              type: "string"
+              example: "Some description"
+            admin:
+              type: "string"
+              example: "123456"
+
+responses:
+  200:
+    description: "Team updated successfully"
+  400:
+    description: "Invalid request payload"
+  404:
+    description: "Team not found"
+  500:
+    description: "Internal server error"

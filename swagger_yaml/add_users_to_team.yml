@@ -1,0 +1,36 @@
+summary: "Add users to a team"
+description: "Add users to an existing team"
+consumes:
+  - "application/json"
+produces:
+  - "application/json"
+
+tags:
+  - "Team"
+
+parameters:
+  - in: "body"
+    name: "body"
+    description: "JSON object containing the team ID and the list of user IDs to add"
+    required: true
+    schema:
+      type: "object"
+      properties:
+        id:
+          type: "string"
+          example: "123456"
+        users:
+          type: "array"
+          items:
+            type: "string"
+            example: "user_id_1"
+
+responses:
+  200:
+    description: "Users added to the team successfully"
+  400:
+    description: "Invalid request payload"
+  404:
+    description: "Team not found"
+  500:
+    description: "Internal server error"

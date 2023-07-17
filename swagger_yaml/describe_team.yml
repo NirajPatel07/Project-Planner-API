@@ -1,0 +1,43 @@
+summary: "Describe a team"
+description: "Retrieve details of a specific team"
+consumes:
+  - "application/json"
+produces:
+  - "application/json"
+
+tags:
+  - "Team"
+
+parameters:
+  - in: "body"
+    name: "body"
+    description: "JSON object containing the team ID"
+    required: true
+    schema:
+      type: "object"
+      properties:
+        id:
+          type: "string"
+          example: "123456"
+
+responses:
+  200:
+    description: "Team described successfully"
+    schema:
+      type: "object"
+      properties:
+        name:
+          type: "string"
+          example: "Team 1"
+        description:
+          type: "string"
+          example: "Some description"
+        creation_time:
+          type: "string"
+          example: "2023-07-16 12:00:00"
+  400:
+    description: "Invalid request payload"
+  404:
+    description: "Team not found"
+  500:
+    description: "Internal server error"

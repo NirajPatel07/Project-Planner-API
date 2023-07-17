@@ -1,0 +1,37 @@
+summary: "Export a board"
+description: "Export a project board to a TXT file"
+consumes:
+  - "application/json"
+produces:
+  - "application/json"
+
+tags:
+  - "Project Board"
+
+parameters:
+  - in: "body"
+    name: "body"
+    description: "JSON object containing the board ID"
+    required: true
+    schema:
+      type: "object"
+      properties:
+        id:
+          type: "string"
+          example: "123456"
+
+responses:
+  200:
+    description: "Board exported successfully"
+    schema:
+      type: "object"
+      properties:
+        out_file:
+          type: "string"
+          example: "board_export.txt"
+  400:
+    description: "Invalid request payload"
+  404:
+    description: "Board not found"
+  500:
+    description: "Internal server error"

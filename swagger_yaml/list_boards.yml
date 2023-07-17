@@ -1,0 +1,42 @@
+summary: "List all boards"
+description: "Retrieve a list of all project boards for a team"
+consumes:
+  - "application/json"
+produces:
+  - "application/json"
+
+tags:
+  - "Project Board"
+
+parameters:
+  - in: "body"
+    name: "body"
+    description: "JSON object containing the team ID"
+    required: true
+    schema:
+      type: "object"
+      properties:
+        id:
+          type: "string"
+          example: "123456"
+
+responses:
+  200:
+    description: "Boards listed successfully"
+    schema:
+      type: "array"
+      items:
+        type: "object"
+        properties:
+          id:
+            type: "string"
+            example: "123456"
+          name:
+            type: "string"
+            example: "Board 1"
+  400:
+    description: "Invalid request payload"
+  404:
+    description: "Team not found"
+  500:
+    description: "Internal server error"

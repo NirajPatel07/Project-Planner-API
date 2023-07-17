@@ -1,0 +1,41 @@
+summary: "Create a new team"
+description: "Create a new team with the provided details"
+consumes:
+  - "application/json"
+produces:
+  - "application/json"
+
+tags:
+  - "Team"
+
+parameters:
+  - in: "body"
+    name: "body"
+    description: "JSON object containing the team details"
+    required: true
+    schema:
+      type: "object"
+      properties:
+        name:
+          type: "string"
+          example: "Team 1"
+        description:
+          type: "string"
+          example: "Some description"
+        admin:
+          type: "string"
+          example: "123456"
+
+responses:
+  200:
+    description: "Team created successfully"
+    schema:
+      type: "object"
+      properties:
+        id:
+          type: "string"
+          example: "123456"
+  400:
+    description: "Invalid request payload"
+  500:
+    description: "Internal server error"
