@@ -2,7 +2,7 @@
 
 This project implements a RESTful API for managing users, teams, and project boards. It provides functionality to create, list, describe, update, and perform other operations on users, teams, and project boards.
 
-![project_planer_api.png](./readme_images/project_planer_api.png)
+![project_planer_api](https://github.com/NirajPatel07/Project-Planner-API/assets/66070865/7b172f8c-f84c-483c-9f8e-059e0ce9f06c)
 
 ## How to Run the Project
 
@@ -19,7 +19,7 @@ This will start the server on `http://127.0.0.1:5000`.
 
 ### Project Board
 
-![project_board.png](./readme_images/project_board.png)
+![project_board](https://github.com/NirajPatel07/Project-Planner-API/assets/66070865/e2449b8a-1d92-4c1b-b974-1c71a56d21a9)
 
 
 The Project Board section provides APIs to manage project boards. A project board represents a unit of delivery for a project and contains tasks assigned to users. The APIs in this section allow you to:
@@ -33,7 +33,7 @@ The Project Board section provides APIs to manage project boards. A project boar
 
 ### Team
 
-![team.png](./readme_images/team.png)
+![team](https://github.com/NirajPatel07/Project-Planner-API/assets/66070865/e25dfc32-1562-48dc-b730-fa9362bae01b)
 
 The Team section provides APIs to manage teams. A team represents a group of users working together on a project. The APIs in this section allow you to:
 
@@ -47,7 +47,7 @@ The Team section provides APIs to manage teams. A team represents a group of use
 
 ### User
 
-![users.png](./readme_images/users.png)
+![users](https://github.com/NirajPatel07/Project-Planner-API/assets/66070865/ea5d5f5b-21eb-4c0b-adf8-77121e57ff61)
 
 The User section provides APIs to manage users. Users are individuals who are part of the project planning tool. The APIs in this section allow you to:
 
@@ -59,7 +59,7 @@ The User section provides APIs to manage users. Users are individuals who are pa
 
 ## Project Directory Structure
 
-![directory.png](./readme_images/directory.png)
+![directory](https://github.com/NirajPatel07/Project-Planner-API/assets/66070865/9e2e747e-acaf-431f-a5e7-756e2db9f735)
 
 The project directory structure is organized as follows:
 
