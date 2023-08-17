@@ -2,7 +2,7 @@
 
 This project implements a RESTful API for managing users, teams, and project boards. It provides functionality to create, list, describe, update, and perform other operations on users, teams, and project boards.
 
-![project_planer_api](https://github.com/NirajPatel07/Project-Planner-API/assets/66070865/7b172f8c-f84c-483c-9f8e-059e0ce9f06c)
+![project_planer_api](https://github.com/NirajPatel07/Project-Planner-API/assets/66070865/bf086f3d-2026-4d04-a1f2-ae63c008c94f)
 
 ## How to Run the Project
 
@@ -19,8 +19,7 @@ This will start the server on `http://127.0.0.1:5000`.
 
 ### Project Board
 
-![project_board](https://github.com/NirajPatel07/Project-Planner-API/assets/66070865/e2449b8a-1d92-4c1b-b974-1c71a56d21a9)
-
+![project_board](https://github.com/NirajPatel07/Project-Planner-API/assets/66070865/93d05bf3-2137-4dbb-9f43-c68a303f1dd7)
 
 The Project Board section provides APIs to manage project boards. A project board represents a unit of delivery for a project and contains tasks assigned to users. The APIs in this section allow you to:
 
@@ -33,7 +32,7 @@ The Project Board section provides APIs to manage project boards. A project boar
 
 ### Team
 
-![team](https://github.com/NirajPatel07/Project-Planner-API/assets/66070865/e25dfc32-1562-48dc-b730-fa9362bae01b)
+![team](https://github.com/NirajPatel07/Project-Planner-API/assets/66070865/96184442-40c8-474d-8082-ed92b19bf362)
 
 The Team section provides APIs to manage teams. A team represents a group of users working together on a project. The APIs in this section allow you to:
 
@@ -47,7 +46,7 @@ The Team section provides APIs to manage teams. A team represents a group of use
 
 ### User
 
-![users](https://github.com/NirajPatel07/Project-Planner-API/assets/66070865/ea5d5f5b-21eb-4c0b-adf8-77121e57ff61)
+![users](https://github.com/NirajPatel07/Project-Planner-API/assets/66070865/9654a15d-1d15-4f17-8bfb-bfbb59d234a6)
 
 The User section provides APIs to manage users. Users are individuals who are part of the project planning tool. The APIs in this section allow you to:
 
@@ -59,7 +58,7 @@ The User section provides APIs to manage users. Users are individuals who are pa
 
 ## Project Directory Structure
 
-![directory](https://github.com/NirajPatel07/Project-Planner-API/assets/66070865/9e2e747e-acaf-431f-a5e7-756e2db9f735)
+![directory](https://github.com/NirajPatel07/Project-Planner-API/assets/66070865/f189f3af-6285-4d5f-ad41-c954816cafb9)
 
 The project directory structure is organized as follows:
 
